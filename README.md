@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Jobly
+Jobly is an Indeed-like web application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can view the backend [here](https://github.com/CaitlynRichmond/express-jobly)
 
-## Available Scripts
+View the deployed site [here](https://malicious-question.surge.sh/), deployed with Render and Surge. It may take a few minutes for Render to spin up.
 
-In the project directory, you can run:
+Login: test-user | Password: password
 
-### `npm start`
+## Tech Stack
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+Here is an overview of some of the key features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Users are able to log in and log out. Authentication is handled with JWTs and a custom hook to store tokens in local storage for persistent across sessions
+- This project works with the backend that was written in a separate sprint
+- Users can apply to jobs
+- Live search with debounce implemented for jobs and companies search.
+- The back end of this project has 95%+ test coverage
 
-### `npm test`
+## Local setup instructions
+Fork and clone the [backend](https://github.com/CaitlynRichmond/express-jobly)
+```
+cd [path_to_your_cloned_backend]
+npm install
+npm start
+```
+the backend will now be running locally on port 3001
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Fork and clone the frontend (this repo)
 
-### `npm run build`
+```
+cd [path_to_your_cloned_frontend]
+npm install
+npm start
+```
+the frontend will now be running locally on port 3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## To-Dos
+- Refactor to use typescript
+- Write tests to cover rendering + mission-critical features
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+The front-end of Jobly was built during my time at Rithm School, as part of a 3-day sprint. My partner on the front end was [JaeWon Jin](https://github.com/jjin286).
